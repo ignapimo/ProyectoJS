@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="maincss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+           #box {
+        width: 100%;
+        height: 100px;
+        background-color: violet;
+        display: none;
+        text-align: center;
+        align-content: center;
+      }
+      button {
+        margin: 10px;
+        padding: 5px 10px;
+        border: solid violet 3px;
+      }
+    </style>
+</head>
+<body>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+
+    <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><h1>Pirela Store</h1></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/Proyecto.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#filtros">Market</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#formulario">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#footer">Redes</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Marcas
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="#">Samsung</a></li>
+                    <li><a class="dropdown-item" href="#">Apple</a></li>
+                    <li><a class="dropdown-item" href="#">LG</a></li>
+                    <li><a class="dropdown-item" href="#">Xiaomi</a></li>
+                  </ul>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+      <br><br><br><br>
+
+
+      <div id="box"><h1>10% de descuento en smartphones!</h1></div>
+
+      <button id="botonCargar"><h3>Ofertas del dia</h3></button>
+
+
+
+    <br><br>
+    <section class="container-fluid" id="section-designs">
+      <!-- Designs section here -->
+      <h1>Designs</h1>
+      <!-- Carousel here -->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button> 
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          </div>
+  
+      
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <center><img src="/images/auri.jpg" class="d-block w-auto" height="700px" alt="..."></center>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <center><img src="/images/iphone.jpg" class="d-block w-auto" height="700px" alt="..."></center>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <center><img src="/images/lg.webp" class="d-block w-auto" height="700px" alt="..."></center>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <center><img src="/images/watch.jpg" class="d-block w-auto" height="700px" alt="Porsche" id="porsche"></center>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Fifth slide label</h5>
+                <p>Some representative placeholder content for the Fifth slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+  </section>
+
+
+    <br><br>
+    </form>
+
+    
+    <center><h1>Market</h1></center>
+
+    <br><br><br>
+    <section id="filtros">
+    <div class="container">
+
+      <main class="container d-flex">
+
+        <div class="container">
+          <select class="form-select" aria-label="Default select example" id="filtrar">
+          <option selected="">Filtrar por categoria</option>
+          <option value="Samsung">Samsung</option>
+          <option value="Apple">Apple</option>
+          <option value="LG">LG</option>
+          <option value="Sony">Sony</option>
+        </select>
+
+        </div>
+      </section >  
+
+     <section id="market"></section>  
+      <div class="container col-8 d-flex flex-wrap justify-content-around" id="contenedorProductos"></div>
+
+  <section id="tabla">
+
+    <div class="carrito" id="freq-questions">
+      <!-- Order My Own Design (Frequent Questions) here -->
+      <p>
+        <button class="carro btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Carrito</button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Articulo</th>
+                <th scope="col">Marca</th>
+              </tr>
+            </thead>
+            <tbody class="col-4" id="contenedorCarrito">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+</section>
+</section>
+  <br><br><br>
+
+
+
+  <section id="section-form" >
+
+  <center><form id="formulario" action="request.php" method="post">
+    <h3>Formulario</h3>
+<p>
+  <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" placeholder="Nombre ">
+  </p><br>
+  <p>
+    <label for="Coreo">Correo</label>
+    <input type="email" id="mail" placeholder="Correo">
+  </p> <br>
+  <p>
+    <label for="Coreo">Empresa</label>
+    <input type="email" id="mail" placeholder="Organizacion">
+  </p> <br>
+  <p>
+    <label for="comentario">Comentarios</label>
+    <textarea id="mensaje" placeholder="Pedidos al mayor, dudas, información"></textarea>
+  </p>
+
+    <div>
+        <button id="send" type="submit">Enviar</button>
+        <div id="status"></div>
+    </div>
+  </form></center>
+
+
+    
+
+
+
+</section>
+
+<footer>
+  <footer class="container-fluid" id="footer">
+    <h4>Contact us!</h4>
+    <div id="box-iconos">
+      <div class="order-logo-subt">
+      <a href=""><img src="/images/instagramwhite.svg" width="30" height="30" id="ig-logo"></a>
+      <p>Instagram</p>
+      </div>
+      <div class="order-logo-subt">
+      <a href=""><img src="/images/tiktokwhite.svg" width="30" height="30" id="tiktok-logo"></a>
+      <p>TikTok</p>
+      </div>
+      <div class="order-logo-subt">
+      <a href=""><img src="/images/facebookwhite.svg" width="30" height="30" id="fb-logo"></a>
+      <p>Facebook</p>
+      </div>
+  </div>
+</footer>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </footer>
+  </body>
+</html>
